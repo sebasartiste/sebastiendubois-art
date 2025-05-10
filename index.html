@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,37 +13,66 @@
       font-family: 'Georgia', serif;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-      height: 100vh;
       text-align: center;
     }
+    .banner {
+      width: 100%;
+      max-height: 80vh;
+      object-fit: cover;
+    }
+    .content {
+      max-width: 900px;
+      padding: 2rem;
+    }
     h1 {
-      font-size: 3rem;
-      letter-spacing: 2px;
-    }
-    p {
-      font-size: 1.2rem;
-      max-width: 600px;
-      margin-top: 1rem;
-    }
-    .accent {
+      font-size: 2.8rem;
+      letter-spacing: 1px;
+      margin-bottom: 0.5rem;
       color: #d6ad60;
-      font-weight: bold;
+    }
+    .subtitle {
+      font-size: 1.2rem;
+      color: #ccc;
+      margin-bottom: 2rem;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      padding-bottom: 2rem;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 420px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     }
     footer {
-      position: absolute;
-      bottom: 20px;
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       color: #666;
+      margin-bottom: 1rem;
     }
   </style>
 </head>
 <body>
-  <h1>sebastiendubois.art</h1>
-  <p class="accent">Coming Soon</p>
-  <p>An immersive journey into music, murals, and stories from around the world.<br>
-     A new universe will open here soon. Stay tuned.</p>
+  <img src="image_website.jpg" alt="banner" class="banner">
+  <div class="content">
+    <h1>sebastiendubois.art</h1>
+    <p class="subtitle">
+      Welcome to the universe of Sébastien Dubois – composer, muralist, and nomadic storyteller.<br>
+      This is where music, murals and memory converge into one poetic journey.<br>
+      A full experience is coming soon.<br><br>
+      Bienvenue dans l’univers de Sébastien Dubois — compositeur, muraliste et conteur nomade.<br>
+      Ici, la musique, la peinture et le voyage s’unissent en une seule poésie vivante.<br>
+      Le site complet arrive bientôt.
+    </p>
+    <div class="gallery">
+      <img src="441411774_10160299986151305_1524583365424871111_n (2).jpg" alt="Sébastien at the piano">
+      <img src="SAM_3989.JPG" alt="Mural painting in nature">
+    </div>
+  </div>
   <footer>© 2025 Sébastien Dubois</footer>
 </body>
 </html>
